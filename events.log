@@ -1,0 +1,39 @@
+2025-03-05 23:37:04,863 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-03-05 23:37:04,863 - [33mPress CTRL+C to quit[0m
+2025-03-05 23:37:04,864 -  * Restarting with stat
+2025-03-05 23:37:05,023 -  * Debugger is active!
+2025-03-05 23:37:05,112 -  * Debugger PIN: 127-366-391
+2025-03-05 23:37:53,941 - 127.0.0.1 - - [05/Mar/2025 23:37:53] "GET / HTTP/1.1" 200 -
+2025-03-05 23:37:53,970 - 127.0.0.1 - - [05/Mar/2025 23:37:53] "GET /static/styles.css HTTP/1.1" 200 -
+2025-03-05 23:37:53,982 - 127.0.0.1 - - [05/Mar/2025 23:37:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-05 23:38:11,139 - Database error: no such table: Devices
+2025-03-05 23:38:11,142 - 127.0.0.1 - - [05/Mar/2025 23:38:11] "GET /devices HTTP/1.1" 200 -
+2025-03-05 23:38:11,164 - 127.0.0.1 - - [05/Mar/2025 23:38:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-05 23:38:14,523 - 127.0.0.1 - - [05/Mar/2025 23:38:14] "GET / HTTP/1.1" 200 -
+2025-03-05 23:38:14,560 - 127.0.0.1 - - [05/Mar/2025 23:38:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-05 23:38:20,402 - Database error: no such table: Devices
+2025-03-05 23:38:20,403 - 127.0.0.1 - - [05/Mar/2025 23:38:20] "GET /devices HTTP/1.1" 200 -
+2025-03-05 23:38:20,429 - 127.0.0.1 - - [05/Mar/2025 23:38:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-05 23:38:21,816 - 127.0.0.1 - - [05/Mar/2025 23:38:21] "GET / HTTP/1.1" 200 -
+2025-03-05 23:38:21,850 - 127.0.0.1 - - [05/Mar/2025 23:38:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-05 23:38:23,782 - Database error: no such table: Devices
+2025-03-05 23:38:23,783 - 127.0.0.1 - - [05/Mar/2025 23:38:23] "GET /devices HTTP/1.1" 200 -
+2025-03-05 23:38:23,816 - 127.0.0.1 - - [05/Mar/2025 23:38:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 127-366-391
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 23:43:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 23:43:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 23:43:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 23:43:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ERROR:root:Database error: no such table: Devices
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 23:43:34] "GET /devices HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 23:43:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -

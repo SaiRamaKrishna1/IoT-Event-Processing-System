@@ -1,0 +1,34 @@
+version: '3'
+services:
+  mqtt_broker:
+    image: eclipse-mosquitto
+    container_name: mqtt_broker
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+    ports:
+      - "1883:1883"
+    restart: always
+
+  mqtt_listener:
+    build: .
+    container_name: mqtt_client
+    depends_on:
+      - mqtt_broker
+    environment:
+      BROKER_HOST: "mqtt_broker"
+    volumes:
+      - ./mqtt_data.db:/data/mqtt_data.db
+    restart: always
+
+  flask_app:
+    build: Device_status/
+    container_name: flask
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mqtt_data.db:/data/mqtt_data.db
+    environment:
+      - FLASK_ENV=production
+    restart: always
+
+
