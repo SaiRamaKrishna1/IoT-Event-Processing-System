@@ -23,7 +23,8 @@ https://docs.docker.com/engine/install/ubuntu/
 
 ## Setting Up the MQTT Broker, Create the necessary Mosquitto configuration directory, Configure Mosquitto to allow anonymous connections and listen on port 1883
 
-```docker pull eclipse-mosquitto
+```
+docker pull eclipse-mosquitto
 git clone https://github.com/SaiRamaKrishna1/IoT-Event-Processing-System.git
 cd IoT-Event-Processing-System/
 mkdir -p mosquitto/config
