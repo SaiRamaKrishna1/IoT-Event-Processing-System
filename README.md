@@ -28,5 +28,4 @@ echo -e "listener 1883 0.0.0.0\nallow_anonymous true" > mosquitto/config/mosquit
 
 ## Run Docker compose in Deattached mode -- It will install the requirements and it will create the containers
 
-``` docker compose up -d --build 
-```
+```docker compose up -d --build
