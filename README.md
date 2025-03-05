@@ -31,5 +31,5 @@ echo -e "listener 1883 0.0.0.0\nallow_anonymous true" > mosquitto/config/mosquit
 ## Running the System with Docker Compose
 ### To build and run the system in detached mode, execute the following command:
 
-     ```docker compose up -d --build```
+```docker compose up -d --build```
 ### This command installs the required dependencies and initializes the necessary containers
