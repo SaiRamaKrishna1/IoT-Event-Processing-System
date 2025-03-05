@@ -25,12 +25,11 @@ https://docs.docker.com/engine/install/ubuntu/
 
 ```docker pull eclipse-mosquitto
 mkdir -p mosquitto/config
-echo -e "listener 1883 0.0.0.0\nallow_anonymous true" > mosquitto/config/mosquitto.conf 
+echo -e "listener 1883 0.0.0.0\nallow_anonymous true" > mosquitto/config/mosquitto.conf
 ```
 
 ## Running the System with Docker Compose
 ### To build and run the system in detached mode, execute the following command:
 
-```docker compose up -d --build
-```
+     ```docker compose up -d --build```
 ### This command installs the required dependencies and initializes the necessary containers
