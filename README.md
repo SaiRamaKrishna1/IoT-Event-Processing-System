@@ -24,6 +24,8 @@ https://docs.docker.com/engine/install/ubuntu/
 ## Setting Up the MQTT Broker, Create the necessary Mosquitto configuration directory, Configure Mosquitto to allow anonymous connections and listen on port 1883
 
 ```docker pull eclipse-mosquitto
+git clone https://github.com/SaiRamaKrishna1/IoT-Event-Processing-System.git
+cd IoT-Event-Processing-System/
 mkdir -p mosquitto/config
 echo -e "listener 1883 0.0.0.0\nallow_anonymous true" > mosquitto/config/mosquitto.conf
 ```
@@ -31,7 +33,7 @@ echo -e "listener 1883 0.0.0.0\nallow_anonymous true" > mosquitto/config/mosquit
 ## Running the System with Docker Compose
 ### To build and run the system in detached mode, execute the following command:
 ```
-  docker compose up -d --build 
+docker compose up -d --build 
 ```
 ### This command installs the required dependencies and initializes the necessary containers
 
