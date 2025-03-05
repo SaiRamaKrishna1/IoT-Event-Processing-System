@@ -30,31 +30,31 @@ echo -e "listener 1883 0.0.0.0\nallow_anonymous true" > mosquitto/config/mosquit
 
 ## Running the System with Docker Compose
 ### To build and run the system in detached mode, execute the following command:
-
-```docker compose up -d --build ```
-
+```
+  docker compose up -d --build 
+```
 ### This command installs the required dependencies and initializes the necessary containers
 
 ## Test Cases:
 ## Case 1: Valid Message
 ### Publishing a complete message and checking if it appears on the UI
-```    mosquitto_pub -h localhost -p 1883 -t "/devices/events" -m '{
+```    
+   mosquitto_pub -h localhost -p 1883 -t "/devices/events" -m '{
       "device_id": "device_100",
       "sensor_type": "temperature",
       "sensor_value": 25.5,
       "timestamp": "2025-03-06T12:30:00Z"
     }'
 ```
-
 ## Case 2: Missing Required Fields (Validation Error)
 ### Publishing an incomplete message and checking if it appears on the UI. If not, verify logs in the mqtt_client container logs
-```    mosquitto_pub -h localhost -p 1883 -t "/devices/events" -m '{
+```   
+   mosquitto_pub -h localhost -p 1883 -t "/devices/events" -m '{
       "device_id": "device_100",
       "sensor_value": 25.5,
       "timestamp": "2025-03-06T12:30:00Z"
     }'
 ```
-
 ## Case 3: JSON Syntax Error (Decoder Error)
 ### Publishing an incorrectly formatted message and checking for JSON decoding errors in mqtt_client logs
 ```
